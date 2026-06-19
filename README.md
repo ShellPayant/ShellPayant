@@ -41,6 +41,20 @@ fueled_by:   Espresso · maps · clean pipelines · stubborn source validation
 
 ### `REI Milano` &nbsp;·&nbsp; *property intelligence for Milan*
 
+<div align="center">
+
+<img src="assets/rei-banner.png" alt="REI — Real Estate Intelligence" width="100%"/>
+
+<p>
+<img alt="Coverage" src="https://img.shields.io/badge/coverage-~8%2C000%20comuni-2F6BD6?style=flat-square&labelColor=1F3A6B"/>
+<img alt="Pilot" src="https://img.shields.io/badge/pilot-Milano-3E7BD4?style=flat-square&labelColor=1F3A6B"/>
+<img alt="Median held-out error" src="https://img.shields.io/badge/median%20%7Cerr%7C-24.0%25-4A7BD4?style=flat-square&labelColor=1F3A6B"/>
+<img alt="Data" src="https://img.shields.io/badge/data-100%25%20public-6FA0E0?style=flat-square&labelColor=1F3A6B"/>
+<img alt="Stack" src="https://img.shields.io/badge/stack-FastAPI%20%2B%20SQLite-9CC0E8?style=flat-square&labelColor=1F3A6B"/>
+</p>
+
+</div>
+
 REI Milano estimates apartment values in Milan from public and official data. The goal is not to pretend the Italian market has perfect transparency. The goal is to make the available signals usable: OMI micro-zones, Milan civic addresses, PVP auction records, asking-price history, and a clear uncertainty range.
 
 ```mermaid
