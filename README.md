@@ -51,6 +51,7 @@ fueled_by:   Espresso · maps · clean pipelines · stubborn source validation
 <img alt="Median held-out error" src="https://img.shields.io/badge/median%20%7Cerr%7C-24.0%25-4A7BD4?style=flat-square&labelColor=1F3A6B"/>
 <img alt="Data" src="https://img.shields.io/badge/data-100%25%20public-6FA0E0?style=flat-square&labelColor=1F3A6B"/>
 <img alt="Stack" src="https://img.shields.io/badge/stack-FastAPI%20%2B%20SQLite-9CC0E8?style=flat-square&labelColor=1F3A6B"/>
+<img alt="Live market" src="https://img.shields.io/badge/live-rates%20%C2%B7%20equities%20%C2%B7%20short--let%20%C2%B7%20news-2F6BD6?style=flat-square&labelColor=1F3A6B"/>
 </p>
 
 </div>
@@ -76,6 +77,7 @@ flowchart LR
 
 **Current pilot:** Milan  
 **Core sources:** Agenzia Entrate OMI, Comune di Milano civici, PVP auctions, Wayback captures  
+**Live market layer:** an operator terminal aggregating ECB rates, Italian RE-sector equities, short-let (Airbnb) pressure, and real-estate news — context only, it never moves the estimate  
 **Output:** property estimate, 80% range, and explainable source context  
 **Demo modes:** FastAPI backend and static browser demo
 
@@ -95,6 +97,9 @@ flowchart LR
 | **PVP auctions** | Real auction outcomes and perizia-derived property evidence |
 | **Asking history** | Open-market listing signals over time |
 | **Static demo bundle** | Browser-side REI Milano estimate flow for easy sharing |
+| **Money & markets** | ECB rates (Euribor · BTP-10Y · €STR · HICP) + Italian RE-sector equities — affordability & sentiment |
+| **Short-let** | Inside Airbnb → per-zone density, entire-home share, implied STR yield |
+| **Live feed** | Italian RE/economy news rail + an engine event-tape (new lots, price cuts, macro prints) |
 
 </div>
 
@@ -129,6 +134,7 @@ The estimate is designed to show uncertainty directly. Italian public data has g
 | [`rei-data-engine`](https://github.com/ShellPayant/rei-data-engine) | Milan property estimate pipeline, API, and static demo |
 | `docs/` static demo | Browser-side REI Milano estimate flow for GitHub Pages / Netlify |
 | PVP + OMI validation work | Auction-label checks and public-source estimate calibration |
+| `REI Terminal` (Mercato) | Live Milano market console — rates, RE equities, short-let, news + event feed |
 
 </div>
 
